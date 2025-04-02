@@ -1,0 +1,61 @@
+[0m06:46:53.513157 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016C289B2510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016C2AEDCBF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016C2AE9C140>]}
+
+
+============================== 06:46:53.537513 | 907e871b-9107-45a8-95ce-5b34cf4808c7 ==============================
+[0m06:46:53.537513 [info ] [MainThread]: Running with dbt=1.9.3
+[0m06:46:53.537513 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': 'C:\\Users\\Dipesh.Gandhi\\.dbt', 'log_path': 'logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt init dbt-snowflake', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m06:46:53.556035 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse logging event dictionary. Failed to parse dir field: expected string or bytes-like object, got 'WindowsPath'.. Dictionary: {'dir': WindowsPath('C:/Users/Dipesh.Gandhi/.dbt')}
+[0m06:46:53.556035 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m06:47:32.199358 [debug] [MainThread]: Starter project path: C:\Users\Dipesh.Gandhi\Desktop\Explore tools\DBT\DBT-Snowflake\python312-venv\Lib\site-packages\dbt\include\starter_project
+[0m06:47:32.291676 [info ] [MainThread]: 
+Your new dbt project "dbtwithsnowflake" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m06:47:32.291676 [info ] [MainThread]: Setting up your profile.
+[0m06:48:10.819052 [error] [MainThread]: Encountered an error:
+
+[0m06:48:10.826288 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\Dipesh.Gandhi\Desktop\Explore tools\DBT\DBT-Snowflake\python312-venv\Lib\site-packages\dbt\cli\requires.py", line 153, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dipesh.Gandhi\Desktop\Explore tools\DBT\DBT-Snowflake\python312-venv\Lib\site-packages\dbt\cli\requires.py", line 103, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dipesh.Gandhi\Desktop\Explore tools\DBT\DBT-Snowflake\python312-venv\Lib\site-packages\dbt\cli\main.py", line 477, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "C:\Users\Dipesh.Gandhi\Desktop\Explore tools\DBT\DBT-Snowflake\python312-venv\Lib\site-packages\dbt\task\init.py", line 346, in run
+    self.setup_profile(profile_name)
+  File "C:\Users\Dipesh.Gandhi\Desktop\Explore tools\DBT\DBT-Snowflake\python312-venv\Lib\site-packages\dbt\task\init.py", line 262, in setup_profile
+    self.create_profile_from_target(adapter, profile_name=profile_name)
+  File "C:\Users\Dipesh.Gandhi\Desktop\Explore tools\DBT\DBT-Snowflake\python312-venv\Lib\site-packages\dbt\task\init.py", line 179, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+  File "C:\Users\Dipesh.Gandhi\Desktop\Explore tools\DBT\DBT-Snowflake\python312-venv\Lib\site-packages\dbt\task\init.py", line 163, in create_profile_from_profile_template
+    target = self.generate_target_from_input(prompts, initial_target)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dipesh.Gandhi\Desktop\Explore tools\DBT\DBT-Snowflake\python312-venv\Lib\site-packages\dbt\task\init.py", line 129, in generate_target_from_input
+    target[key] = click.prompt(
+                  ^^^^^^^^^^^^^
+  File "C:\Users\Dipesh.Gandhi\Desktop\Explore tools\DBT\DBT-Snowflake\python312-venv\Lib\site-packages\click\termui.py", line 164, in prompt
+    value = prompt_func(prompt)
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dipesh.Gandhi\Desktop\Explore tools\DBT\DBT-Snowflake\python312-venv\Lib\site-packages\click\termui.py", line 147, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m06:48:10.829079 [debug] [MainThread]: Command `dbt init` failed at 06:48:10.829079 after 77.51 seconds
+[0m06:48:10.830876 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016C2AC1A1B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016C42A01880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016C434B6F00>]}
+[0m06:48:10.833025 [debug] [MainThread]: Flushing usage events
+[0m06:48:12.012323 [debug] [MainThread]: An error was encountered while trying to flush usage events

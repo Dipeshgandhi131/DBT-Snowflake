@@ -3,3 +3,14 @@
 #### dbt init <project-name> - To initialize (get skeleton) dbt project
 # C:\> Python312-venv\Scripts\activate.bat
 # python312 -m venv .venv
+
+# Core:
+#   - installed: 1.9.4
+#   - latest:    1.9.4 - Up to date!
+
+# Plugins:
+#   - bigquery:  1.9.1 - Up to date!
+#   - postgres:  1.9.0 - Up to date!
+#   - redshift:  1.9.3 - Up to date!
+#   - snowflake: 1.9.2 - Up to date!
+#   - trino:     1.9.1 - Up to date!
